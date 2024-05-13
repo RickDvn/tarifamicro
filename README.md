@@ -6,7 +6,7 @@ Su estructura es:
 -model: Paquete donde se encuentran los modelos
  
   -Terminal: El modelo de los terminales con sus datos
-  ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/51a7de18-13c0-45ec-8b15-7fabd8f66891)
+![image](https://github.com/RickDvn/tarifamicro/assets/168721035/51a7de18-13c0-45ec-8b15-7fabd8f66891)
 
 
 -reader: Paquete que contiene los distintos readers de la aplicación

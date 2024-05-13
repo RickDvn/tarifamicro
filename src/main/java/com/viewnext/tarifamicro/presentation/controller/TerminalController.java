@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.viewnext.tarifamicro.buisness.service.TerminalService;
+import com.viewnext.tarifamicro.buisness.service.TerminalServiceImpl;
 import com.viewnext.tarifamicro.model.Terminal;
-import com.viewnext.tarifamicro.presentation.service.TerminalService;
-import com.viewnext.tarifamicro.presentation.service.TerminalServiceImpl;
 
 
 /**
@@ -26,18 +26,6 @@ public class TerminalController {
 	private TerminalService terminalService = new TerminalServiceImpl();
 	
 	/**
-	 * Peticion get del controller para obtener todo el catalogo de terminales, se accede con: " localhost:8081/terminales/getCatalogo "
-	 * 
-	 * @return los valores
-	 */
-	@GetMapping(value = "/getCatalogo")
-	public List<Terminal> getTerminales(){
-		log.info("Acceso a /getCatalogo");
-		
-		return terminalService.getTerminales();
-	}
-	
-	/**
 	 * Peticion get del controller para obtener todo el catalogo de terminales con sus tarifas, se accede con: " localhost:8081/terminales/getTarifas "
 	 * 
 	 * @return los valores
@@ -45,6 +33,7 @@ public class TerminalController {
 	@GetMapping(value = "/getTarifas")
 	public List<Terminal> getTarifas(@RequestBody List<Terminal> terminales){
 		log.info("Acceso a /getTarifas");
+		
 		terminalService.adjuntarTarifa(terminales);
 		return terminales;
 	}

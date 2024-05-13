@@ -19,7 +19,7 @@ Su estructura es:
   
  ### service: Contiene los servicios de la aplicacion
     
- -TerminalService: El servicio del modelo Terminal
+ #### TerminalService: El servicio del modelo Terminal
       
  -interfaz
 ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/a106a4b6-2533-460b-ae59-252602126a01)

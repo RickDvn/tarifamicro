@@ -1,4 +1,4 @@
-package com.viewnext.tarifamicro.presentation.service;
+package com.viewnext.tarifamicro.buisness.service;
 
 import java.util.List;
 
@@ -13,13 +13,6 @@ import com.viewnext.tarifamicro.reader.TerminalReader;
  */
 @Service
 public class TerminalServiceImpl implements TerminalService {
-
-	@Override
-	public List<Terminal> getTerminales() {
-		List<Terminal> terminales;
-		terminales = TerminalReader.readCSVsTerminal();
-		return terminales;
-	}
 
 	@Override
 	public List<Terminal> adjuntarTarifa(List<Terminal> terminales) {

@@ -23,7 +23,7 @@ El método privado lee el fichero de tarifas y el público adjunta la tarifa que
     
  #### TerminalService: El servicio del modelo Terminal
       
- -interfaz
+-interfaz
 ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/a106a4b6-2533-460b-ae59-252602126a01)
       
  -implementacion

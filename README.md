@@ -19,14 +19,14 @@ Su estructura es:
   
   -service: Contiene los servicios de la aplicacion
     
-    -TerminalService: El servicio del modelo Terminal
+   -TerminalService: El servicio del modelo Terminal
       
-      -interfaz
-      ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/a106a4b6-2533-460b-ae59-252602126a01)
+     -interfaz
+     ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/a106a4b6-2533-460b-ae59-252602126a01)
       
-      -implementacion
+     -implementacion
       
-      ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/0cedb8fb-0ac4-465d-8b5e-76233b05556c)
+     ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/0cedb8fb-0ac4-465d-8b5e-76233b05556c)
 
 -presentation: Contiene todo lo que tenga que ver con la capa de presentiacion
   

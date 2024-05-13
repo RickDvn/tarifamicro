@@ -1,5 +1,5 @@
 # tarifamicro
-Lee los csv, adjunta tarifas a los terminales y devuelve un JSON a la petición HTTP
+Lee los csv, adjunta tarifas a los terminales y devuelve un JSON a la petición HTTP. Los modelos han sido realizados con Lombok
 
 Su estructura es:
 

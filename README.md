@@ -35,3 +35,12 @@ Su estructura es:
  #### TerminalController: El controller del modelo Terminal
     
 ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/28b87b97-8b23-4104-a0cc-86c45e48bbee)
+
+## Tests
+
+### TerminalReaderTest
+![image](https://github.com/RickDvn/tarifamicro/assets/168721035/4291e586-b6e7-4eda-ac3b-b7994d75fede)
+
+### TerminalServiceImplTest
+![image](https://github.com/RickDvn/tarifamicro/assets/168721035/1c87b090-0cdf-4d2e-8f30-06d6175c0a06)
+

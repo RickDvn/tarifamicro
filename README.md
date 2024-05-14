@@ -13,8 +13,7 @@ Su estructura es:
   
   #### TerminalReader: Contiene los readers del modelo Terminal
   ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/b416e705-730f-4a61-9073-4a420378446f)
-
-  ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/fa4d66d0-8396-400e-9bd1-475cb4c669ad)
+  ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/ebc9e2ca-c1f2-470b-a61a-24c492caaac5)
 
 El método privado lee el fichero de tarifas y el público adjunta la tarifa que corresponda a cada terminal según su id
 

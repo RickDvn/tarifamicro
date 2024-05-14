@@ -37,7 +37,12 @@ public class TerminalReader {
 			tarifaTerminal = datTarifas.get(Integer.toString(terminal.getId())); // Asociacion de datos de stock y terminal segun el id
 			if (tarifaTerminal != null) {
 				terminal.setNombreTarifa(tarifaTerminal[1]);
-				terminal.setPrecio(Float.valueOf(tarifaTerminal[2]));
+				try {					
+					terminal.setPrecio(Float.valueOf(tarifaTerminal[2]));
+				}catch(NumberFormatException e) {
+					terminal.setPrecio(-1F);
+					log.error("Ocurrio un error con los tipos de tablas");
+				}
 			}
 		}
 		

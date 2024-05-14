@@ -50,3 +50,8 @@ Este controller se encarga de la petición /getTarifas, para la cual devuelve un
 ### TerminalServiceImplTest
 ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/1c87b090-0cdf-4d2e-8f30-06d6175c0a06)
 
+Creo dos listas, una para los datos de prueba y otra para los resultados, la primera es la que va a tener los datos y la segunda los resultados.
+Creo dos objetos de prueba y los meto en la primera lista, esos objetos tienen ids que existen en el fichero para que el reader pueda trabajar.
+
+Llamo al método, obtengo los resultados y compruebo que la lista no sea nula, no esté vacía y contenga el mismo número de elementos que la primera.
+Después compruebo que tengan el nombre y el precio de la tarifa.

@@ -8,6 +8,7 @@ Su estructura es:
   #### Terminal: El modelo de los terminales con sus datos
   ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/51a7de18-13c0-45ec-8b15-7fabd8f66891)
 
+Tiene los campos necesarios para guardar la información requerida, tales como: su id, el stock y la tarifa.
 
 ## reader: Paquete que contiene los distintos readers de la aplicación
   
@@ -15,7 +16,7 @@ Su estructura es:
   ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/b416e705-730f-4a61-9073-4a420378446f)
   ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/ebc9e2ca-c1f2-470b-a61a-24c492caaac5)
 
-El método privado lee el fichero de tarifas y el público adjunta la tarifa que corresponda a cada terminal según su id
+El método privado **readTarifas** lee el fichero de tarifas y el público **adjuntarTarifas** adjunta la tarifa que corresponda a cada terminal según su id
 
 ## buisness: Contiene todo lo que tenga que ver con la capa de negocio
   

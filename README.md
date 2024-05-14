@@ -24,11 +24,11 @@ El método privado lee el fichero de tarifas y el público adjunta la tarifa que
  #### TerminalService: El servicio del modelo Terminal
  -interfaz
 
-![image](https://github.com/RickDvn/tarifamicro/assets/168721035/a106a4b6-2533-460b-ae59-252602126a01)
+![image](https://github.com/RickDvn/tarifamicro/assets/168721035/1216cce9-0698-4e9d-904e-e53a5fd6b1e6)
       
  -implementacion
       
-![image](https://github.com/RickDvn/tarifamicro/assets/168721035/0cedb8fb-0ac4-465d-8b5e-76233b05556c)
+![image](https://github.com/RickDvn/tarifamicro/assets/168721035/4f2dbb7f-95cf-4b31-aaad-a80f919671cd)
 
 El único método de esta capa llama al adjuntarTarifas() del reader y devuelve la lista con las tarifas adjuntadas
 

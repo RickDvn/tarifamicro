@@ -53,5 +53,10 @@ Creo dos objetos de prueba y los meto en la primera lista, esos objetos tienen i
 Llamo al método, obtengo los resultados y compruebo que la lista no sea nula, no esté vacía y contenga el mismo número de elementos que la primera.
 Después compruebo que tengan el nombre y el precio de la tarifa.
 
+-Resultado:
+
+![image](https://github.com/RickDvn/tarifamicro/assets/168721035/95159f47-9d92-4926-8d3f-1d1f6fd6a6b2)
+
+
 ### TerminalServiceImplTest
 ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/1c87b090-0cdf-4d2e-8f30-06d6175c0a06)

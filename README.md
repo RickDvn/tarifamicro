@@ -59,4 +59,5 @@ Después compruebo que tengan el nombre y el precio de la tarifa.
 
 
 ### TerminalServiceImplTest
-![image](https://github.com/RickDvn/tarifamicro/assets/168721035/1c87b090-0cdf-4d2e-8f30-06d6175c0a06)
+![image](https://github.com/RickDvn/tarifamicro/assets/168721035/90b0c4cf-76be-44bc-9e6f-c32771b0dd6f)
+

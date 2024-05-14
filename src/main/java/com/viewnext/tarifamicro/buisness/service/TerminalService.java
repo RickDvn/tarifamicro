@@ -11,4 +11,6 @@ public interface TerminalService {
 	
 	public List<Terminal> adjuntarTarifa(List<Terminal> terminales);
 	
+	public Terminal getbyId(int id);
+	
 }

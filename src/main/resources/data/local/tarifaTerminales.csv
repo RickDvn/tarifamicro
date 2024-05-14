@@ -1,6 +1,6 @@
-id,nombreTarifa,precio
-11111,Básico,9.99
-22222,Premium,19.99
-33333,Avanzado,29.99
-44444,Pro,49.99
-55555,Enterprise,99.99
+id,nombreTarifa,precio,iva
+11111,Básico,9.99,21
+22222,Premium,19.99,21
+33333,Avanzado,29.99,7
+44444,Pro,49.99,7
+55555,Enterprise,99.99,21

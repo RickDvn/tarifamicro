@@ -24,6 +24,9 @@ public class TerminalReader {
 	}
 	
 	public static List<Terminal> adjuntarTarifas(List<Terminal> terminales) {
+		Float precioSinIva;
+		Float iva;
+		Float precioConIva;
 		
 		log.info("Accediendo a los ficheros...");
 		
@@ -37,7 +40,18 @@ public class TerminalReader {
 			tarifaTerminal = datTarifas.get(Integer.toString(terminal.getId())); // Asociacion de datos de stock y terminal segun el id
 			if (tarifaTerminal != null) {
 				terminal.setNombreTarifa(tarifaTerminal[1]);
-				terminal.setPrecio(Float.valueOf(tarifaTerminal[2]));
+				try {
+					precioSinIva = Float.valueOf(tarifaTerminal[2]);
+					iva = Float.valueOf(tarifaTerminal[3]);
+					precioConIva = precioSinIva * (1F + iva / 100F);
+					terminal.setPrecio(Math.round(precioConIva * 100) / 100F); // Con eso lo redondeo a 2 decimales
+				}catch(NumberFormatException e) {
+					terminal.setPrecio(null);
+					log.error("Esta fila no tiene el formato correcto");
+				}catch(ArrayIndexOutOfBoundsException e) {
+					terminal.setPrecio(null);
+					log.error("A esta fila le faltan columnas");
+				}
 			}
 		}
 		

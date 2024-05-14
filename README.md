@@ -41,7 +41,17 @@ El método privado **readTarifas** lee el fichero de tarifas y el público **adj
       
 ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/4f2dbb7f-95cf-4b31-aaad-a80f919671cd)
 
-El único método de esta capa llama al adjuntarTarifas() del reader y devuelve la lista con las tarifas adjuntadas
+Este servicio consta 1 atributo: **terminalRep**, que es el mapa en donde se guardarán los terminales en memoria y 2 métodos: **adjuntarTarifa** y **getbyId**
+
+##### adjuntarTarifa
+
+Se le pasa una lista de terminales por parámetros que se usa para llamar al método **adjuntarTarifas** del TerminalReader y se guarda el resultado en una lista temporal.
+Una vez realizado ese proceso, se recorre la lista temporal y se comprueba que tenga precio, si no tiene no se meterá al mapa del servicio, así solo estarán presentes los que tienen los datos correctos.
+Una vez terminado todo se devuelve una lista con los valores del mapa.
+
+##### getbyId
+
+Se le pasa una variable **id** de tipo **int** y se devuelve el resultado de hacer un get al mapa con esa id, si existe devuelve el terminal, si no devuelve **null**.
 
 ## presentation: Contiene todo lo que tenga que ver con la capa de presentiacion
   

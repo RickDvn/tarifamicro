@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,9 +34,22 @@ public class TerminalController {
 	 */
 	@PostMapping(value = "/getTarifas")
 	public List<Terminal> getTarifas(@RequestBody List<Terminal> terminales){
+		List<Terminal> terminalesTemp;
 		log.info("Acceso a /getTarifas");
 		
-		terminalService.adjuntarTarifa(terminales);
-		return terminales;
+		terminalesTemp = terminalService.adjuntarTarifa(terminales);
+		return terminalesTemp;
+	}
+
+	/**
+	 * Peticion get del controller para obtener el terminal con la id pasada con su tarifa, se accede con: " localhost:8081/terminales/getTarifas/ "<- la id deseada
+	 * 
+	 * @param id, la id del terminal a devolver
+	 * @return el terminal con la id deseada
+	 */
+	@GetMapping(value = "/getTarifas/{id}")
+	public Terminal getTarifas(@PathVariable(required = true) int id){
+		log.info("Acceso a /getTarifas/{}", id);
+		return terminalService.getbyId(id);
 	}
 }

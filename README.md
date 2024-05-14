@@ -18,6 +18,16 @@ Tiene los campos necesarios para guardar la información requerida, tales como: 
 
 El método privado **readTarifas** lee el fichero de tarifas y el público **adjuntarTarifas** adjunta la tarifa que corresponda a cada terminal según su id
 
+ ##### readTarifas
+
+ Utiliza el **CSVReader** para leer los datos del fichero csv deseado y transforma cada fila en un array de Strings que guardo en un hashmap con la columna id como clave, 
+ una vez leídos los datos devuelve el hashmap.
+ 
+ ##### adjuntarTarifas
+
+ Recibe una lista por parámetros y utiliza el readTarifas para obtener las tarifas del fichero, después recorre la lista que se le ha pasado y va mirando en el HashMap con el id del terminal 
+ para ver si hay alguna tarifa para él, si la hay se la asigna calculando el precio que tendría una vez subido el iva, si no, se queda en null. Una vez acabado ese proceso se devuelve la lista.
+
 ## buisness: Contiene todo lo que tenga que ver con la capa de negocio
   
  ### service: Contiene los servicios de la aplicacion

@@ -59,9 +59,17 @@ Se le pasa una variable **id** de tipo **int** y se devuelve el resultado de hac
     
  #### TerminalController: El controller del modelo Terminal
     
-![image](https://github.com/RickDvn/tarifamicro/assets/168721035/28b87b97-8b23-4104-a0cc-86c45e48bbee)
+![image](https://github.com/RickDvn/tarifamicro/assets/168721035/46f7550e-d9f2-455c-a2dc-3c0093775060)
 
-Este controller se encarga de la petición /getTarifas, para la cual devuelve un JSON con los terminales una vez adjuntadas sus terifas
+Este controller se encarga de las peticiones **/getTarifas** y **/getTarifas/{id}**
+
+##### /getTarifas
+
+Este endpoint recibe un JSON con una lista de terminales, les adjunta su tarifa y devuelve otro JSON con la lista de terminales ya modificada
+
+##### /getTarifas/{id}
+
+Este endpoint recibe una id, obtiene el terminal al que corresponde ese id y devuelve un JSON de ese objeto, si no existe devuelve un JSON vacío
 
 ## Tests
 

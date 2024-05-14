@@ -61,3 +61,15 @@ Después compruebo que tengan el nombre y el precio de la tarifa.
 ### TerminalServiceImplTest
 ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/90b0c4cf-76be-44bc-9e6f-c32771b0dd6f)
 
+#### testAdjuntarTarifa
+
+En este test se crean dos listas, la que tiene los datos de prueba (la primera) y la que va a guardar el resultado (la segunda).
+Los dos primeros objetos de prueba tienen ids que corresponden con ids de tarifas, último no.
+
+Ejecuto el método, guardo el resultado y compruebo que: no es nulo, no está vacío, tiene el mismo número de datos que la primera lista salvo el último objeto que no debe añadirse y 
+que las ids de los dos primeros objetos coinciden con los de la lista de prueba.
+
+#### testGetbyId
+
+En este test creo un objeto de prueba  y otro para guardar los resultados. el objeto de prueba lo meto a la fuerza en el mapa del servicio, 
+después ejecuto el método con la id de ese objeto y guardo el resultado en el otro objeto y compruebo: que no sea nulo y que tengan la misma id, si todo eso se cumple, el resto debería ser igual

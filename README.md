@@ -45,6 +45,9 @@ Este controller se encarga de la petición /getTarifas, para la cual devuelve un
 ## Tests
 
 ### TerminalReaderTest
+
+#### testAdjuntarTarifas
+
 ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/4291e586-b6e7-4eda-ac3b-b7994d75fede)
 
 Creo dos listas, una para los datos de prueba y otra para los resultados, la primera es la que va a tener los datos y la segunda los resultados.
@@ -53,7 +56,7 @@ Creo dos objetos de prueba y los meto en la primera lista, esos objetos tienen i
 Llamo al método, obtengo los resultados y compruebo que la lista no sea nula, no esté vacía y contenga el mismo número de elementos que la primera.
 Después compruebo que tengan el nombre y el precio de la tarifa.
 
--Resultado:
+##### Resultado:
 
 ![image](https://github.com/RickDvn/tarifamicro/assets/168721035/95159f47-9d92-4926-8d3f-1d1f6fd6a6b2)
 
@@ -73,3 +76,7 @@ que las ids de los dos primeros objetos coinciden con los de la lista de prueba.
 
 En este test creo un objeto de prueba  y otro para guardar los resultados. el objeto de prueba lo meto a la fuerza en el mapa del servicio, 
 después ejecuto el método con la id de ese objeto y guardo el resultado en el otro objeto y compruebo: que no sea nulo y que tengan la misma id, si todo eso se cumple, el resto debería ser igual
+
+##### Resultado
+
+![image](https://github.com/RickDvn/tarifamicro/assets/168721035/1f9d746d-5f73-4528-84c1-866d414b7471)

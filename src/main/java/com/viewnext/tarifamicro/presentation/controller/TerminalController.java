@@ -4,9 +4,11 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.viewnext.tarifamicro.buisness.service.TerminalService;
 import com.viewnext.tarifamicro.buisness.service.TerminalServiceImpl;
 import com.viewnext.tarifamicro.model.Terminal;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 /**
@@ -25,7 +29,8 @@ public class TerminalController {
 	
 	private static final Logger log = LoggerFactory.getLogger(TerminalController.class);
 	
-	private TerminalService terminalService = new TerminalServiceImpl();
+	@Autowired
+	private TerminalService terminalService;
 	
 	/**
 	 * Peticion get del controller para obtener todo el catalogo de terminales con sus tarifas, se accede con: " localhost:8081/terminales/getTarifas "
@@ -52,4 +57,5 @@ public class TerminalController {
 		log.info("Acceso a /getTarifas/{}", id);
 		return terminalService.getbyId(id);
 	}
+	
 }
